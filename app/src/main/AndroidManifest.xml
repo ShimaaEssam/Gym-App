@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.giants">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+            android:allowBackup="true"
+            android:supportsRtl="true"
+            android:roundIcon="@drawable/logo"
+            android:label="@string/app_name"
+            android:icon="@drawable/logo"
+            android:theme="@style/AppTheme">
+        <meta-data
+                android:name="com.google.android.gms.version"
+                tools:replace="android:value"
+                android:value="@integer/google_play_services_version"/>
+        <activity android:name="com.giants.MainActivity" android:theme="@style/AppThemeNOACTIONBAR">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.giants.user.SignUpActivity" android:theme="@style/AppThemeNOACTIONBAR"/>
+
+        <activity android:name="com.giants.user.SignInActivity" android:theme="@style/AppThemeNOACTIONBAR"/>
+
+        <activity android:name="com.giants.user.PasswordActivity" android:theme="@style/AppThemeNOACTIONBAR"/>
+
+        <activity android:name="com.giants.user.HomeActivity" android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_home"/>
+
+        <activity android:name="com.giants.user.DetailActivity" android:theme="@style/AppThemeNOACTIONBAR"/>
+
+        <activity android:name="com.giants.user.ParticipateActivity" android:theme="@style/AppThemeNOACTIONBAR"/>
+
+        <activity android:name="com.giants.user.OfferDetailActivity" android:theme="@style/AppThemeNOACTIONBAR"/>
+
+        <activity android:name="com.giants.user.OfferParticipateActivity" android:theme="@style/AppThemeNOACTIONBAR"/>
+
+        <activity android:name="com.giants.UserActivity" android:theme="@style/AppThemeNOACTIONBAR" android:noHistory="true"/>
+
+        <activity android:name="com.giants.admin.AdminSignInActivity" android:theme="@style/AppThemeNOACTIONBAR"/>
+
+        <activity android:name="com.giants.admin.AdminHomeActivity" android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_admin_home" />
+
+        <activity android:name="com.giants.admin.AddServiceActivity" android:theme="@style/AppThemeNOACTIONBAR"/>
+
+        <activity android:name="com.giants.admin.AddOfferActivity" android:theme="@style/AppThemeNOACTIONBAR"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OffersFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/texxt"-->
+        <!--android:text="At GiantsGym, we provide the best gym deals-->
+        <!--we can to keep prices low so you can focus on your fitness-->
+        <!--instead of your finances. We have two great gym membership-->
+        <!--offers available for students and for members who sign up to-->
+        <!--fixed term memberships, both can be purchased online instantly.-->
+        <!--We have made it simple, affordable and convenient for everyone-->
+        <!--to achieve their personal health goals. Whether you're looking-->
+         <!--to tone up, lose weight or improve your general fitness, everyone-->
+          <!--and every body is welcome at our gyms." />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/recycleroffer"
+        android:scrollbars="vertical"/>
+</android.support.v4.widget.SwipeRefreshLayout>

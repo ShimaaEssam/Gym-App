@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+        app:cardElevation="4dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/button_shape">
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="50">
+
+            <ImageView
+                android:layout_height="70dp"
+                android:layout_width="70dp"
+                android:src="@drawable/press"
+                android:layout_weight="10"
+                android:scaleType="centerCrop"
+                android:id="@+id/offerImage"
+                android:layout_marginLeft="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="40">
+                <!--<TextView-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:id="@+id/offerDescription"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:text="Description"/>-->
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/offer_motiv"
+                    android:gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/darkgrey"
+                    android:text="motivation"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>

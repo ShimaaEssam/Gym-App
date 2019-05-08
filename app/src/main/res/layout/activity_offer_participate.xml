@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".user.OfferParticipateActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/img"
+                    android:src="@drawable/ic_lock"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:text="Payment"
+                    android:textSize="28sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold|italic"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/cardNameoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CardHolder's Name"
+                android:inputType="textPersonName"
+                android:background="@drawable/button_shape"
+                android:textColorHint="@color/darkgrey"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <EditText
+                android:id="@+id/cardNumoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Card Number"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_shape"
+                android:textColorHint="@color/darkgrey"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <!--Card Verification Value) on a credit card is a 3-4 digit number on VISA, MasterCard-->
+            <EditText
+                android:id="@+id/cvvoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CVV"
+                android:inputType="number"
+                android:background="@drawable/button_shape"
+                android:textColorHint="@color/darkgrey"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <Button
+                android:id="@+id/payoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/background_shape"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/white"
+                android:text="pay now"
+                android:textStyle="bold"
+                android:clickable="false"/>
+
+            <ProgressBar
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:id="@+id/progressBarCardoff"/>
+        </LinearLayout>
+    </ScrollView>
